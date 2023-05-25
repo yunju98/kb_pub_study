@@ -25,6 +25,9 @@ header {
   align-items: center;
   height: 70px;
 }
+header header:hover {
+  background-color: #fff;
+}
 header .inner {
   display: flex;
   align-items: center;

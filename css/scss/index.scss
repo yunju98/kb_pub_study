@@ -12,6 +12,10 @@ header{
     align-items: center;
     height: 70px;
 
+    header:hover{
+        background-color: #fff;
+    }
+
     .inner{
         display: flex;
         align-items: center;
