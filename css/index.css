@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  background-color: #f9f9f9;
 }
 
 html, body {
@@ -19,5 +21,92 @@ html, body {
 
 /*header*/
 header {
+  display: flex;
+  align-items: center;
   height: 70px;
+}
+header .inner {
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+  /*********    h1 (S)     **************/
+  /***********     nav (S)      *************/
+  /*************  rifht menu (S)  **********/
+}
+header .inner h1 img {
+  width: 130px;
+  height: 24px;
+  margin: 10px 16px;
+}
+header .inner nav {
+  flex-grow: 5;
+  /* nav구역 hover */
+}
+header .inner nav ul {
+  display: flex;
+}
+header .inner nav ul li {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 10px 16px;
+}
+header .inner nav ul a::after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: red;
+  border-radius: 100%;
+}
+header .inner nav a {
+  padding: 10px 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #707070;
+}
+header .inner nav li:hover a {
+  color: #000;
+}
+header .inner nav li:hover a::after {
+  display: block;
+}
+header .inner div {
+  display: flex;
+  align-items: center;
+  flex-grow: 0;
+  /* right menu 구역 hover */
+}
+header .inner div ul {
+  display: flex;
+}
+header .inner div a {
+  padding: 10px;
+  font-size: 1.4rem;
+  color: #707070;
+}
+header .inner div .btn_login {
+  margin: 0 20px;
+  padding: 5px 12px;
+  border: 1px solid #c8c8c8;
+  border-radius: 50px;
+}
+header .inner div button {
+  width: 40px;
+  border: none;
+}
+header .inner div button img {
+  width: 32px;
+}
+header .inner div li:hover a {
+  color: #000;
+  font-weight: bold;
+}
+header .inner div .btn_login:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid gray;
 }

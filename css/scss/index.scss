@@ -8,5 +8,110 @@
 
 /*header*/
 header{
+    display: flex;
+    align-items: center;
     height: 70px;
+
+    .inner{
+        display: flex;
+        align-items: center;
+        margin: 0 30px;
+/*********    h1 (S)     **************/
+        h1{
+            img{
+                width: 130px;
+                height: 24px;
+                margin: 10px 16px;
+            }
+        }
+
+/***********     nav (S)      *************/
+        nav{
+            flex-grow: 5;
+            ul{
+                display: flex;
+
+                li{
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    padding: 10px 16px;
+                }
+
+                a::after{
+                    content:"";
+                    display: none;
+                    position: absolute;
+                    top: 45px;
+                    left: 50%;
+                    width: 4px;
+                    height: 4px;
+                    background-color: red;
+                    border-radius: 100%;
+                }
+            }
+            
+            a{
+                padding: 10px 0;
+                font-size: 1.8rem;
+                font-weight: bold;
+                color: #707070;
+            }
+
+            /* nav구역 hover */
+            li:hover a{
+                color:#000;
+            }
+
+            li:hover a::after{
+                display: block;
+            }
+        }
+/*************  rifht menu (S)  **********/
+        div{
+            display: flex;
+            align-items: center;
+            flex-grow: 0;
+
+            ul{
+                display: flex;
+            }
+
+            a{
+                padding: 10px;
+                font-size: 1.4rem;
+                color: #707070;
+            }
+
+            .btn_login{
+                margin: 0 20px;
+                padding: 5px 12px;
+                border: 1px solid #c8c8c8;
+                border-radius: 50px;
+            }
+
+            button{
+                width: 40px;
+                border: none;
+                
+                img{
+                    width: 32px;
+                }
+            }
+
+            /* right menu 구역 hover */
+            li:hover a{
+                color:#000;
+                font-weight: bold;
+            }
+
+            .btn_login:hover{
+                color:#000;
+                background-color: #fff;
+                border: 1px solid gray;
+            }
+        }
+    }
 }
+
+
