@@ -166,6 +166,9 @@ h2 span {
 section {
   display: flex;
 }
+section .left_box {
+  /* left-box hover */
+}
 section .left_box ul {
   display: flex;
   flex-wrap: wrap;
@@ -190,6 +193,7 @@ section .left_box li {
   margin: 0 20px 20px 0;
   border: 1px solid #e6e6e6;
   border-radius: 25px;
+  z-index: 100;
 }
 section .left_box a {
   position: absolute;
@@ -205,6 +209,33 @@ section .left_box p {
   padding: 20px 0 0 0;
   font-size: 1.5rem;
   color: #707070;
+}
+section .left_box .item1 a::before {
+  content: "";
+  display: block;
+  width: 232px;
+  height: 240px;
+  background: url(../../assets/img/bg_card01.png) no-repeat right -20px bottom -20px/180px;
+  transform: scale(2);
+  opacity: 0;
+  z-index: 200;
+}
+section .left_box .item1:hover {
+  background: linear-gradient(to bottom right, #FFECA8, #FFD131);
+  translate: all 2s ease-in-out;
+}
+section .left_box .item1:hover a::before {
+  transform: scale(1);
+  opacity: 1;
+}
+section .left_box .item2:hover {
+  background: linear-gradient(to bottom right, #DFF0A9, #C9DD8C);
+}
+section .left_box .item3:hover {
+  background: linear-gradient(to bottom right, #E2D9F4, #C7D0F7);
+}
+section .left_box .item4:hover {
+  background: linear-gradient(to bottom right, #FFE0C6, #F7B983);
 }
 
 /*******     right box (S)    ******/
