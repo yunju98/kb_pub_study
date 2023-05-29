@@ -192,6 +192,7 @@ section{
 }
 /*******     right box (S)    ******/
 .right_box{
+    /*    service-box (S)   */
     .service_box{
         display: flex;
         align-items: center;
@@ -262,7 +263,7 @@ section{
 
         }
     }
-
+    /*******    notice-box (S)   **********/
     .notice_box{
         display: flex;
         justify-content: space-between;
@@ -303,7 +304,7 @@ section{
             }
         }
     }
-
+    /***********    banner-box (S)   ***********/
     .banner_box{
         display: flex;
         justify-content: space-between;
@@ -338,7 +339,7 @@ section{
         }
     }
 }
-
+/***********    chatbot-box (S)   ***********/
 .chatbot_box{
     position: fixed;
     right: 100px;
@@ -391,4 +392,147 @@ section{
 }
 
 
+/* footer */
+/***********    customer-box (S)   ***********/
+.customer_box{
+    display: flex;
+    margin-top: 30px;
+    border-top: 1px solid #e6e6e6;
+    padding: 25px 0 0;
+
+    li{
+        margin-right: 22px;
+
+        span{
+            margin: 0 30px;
+            font-size: 1.3rem;
+            color:#707070;
+        }
+
+        strong{
+            margin-left: -20px;
+            font-size: 2rem;
+            color: #303030;
+        }
+    }
+    
+    .color_303030{
+        color:#303030;
+    }
+
+    .color_brown{
+        color:#776C61;
+    }
+
+    .type1{
+        background: url(../../assets/img/icon_call01.png) no-repeat left center/24px;
+    }
+    .type2{
+        background: url(../../assets/img/icon_call02.png) no-repeat left center/24px;
+    }
+    .type3{
+        background: url(../../assets/img/icon_call03.png) no-repeat left center/24px;
+    }
+    .type4{
+        background: url(../../assets/img/icon_call04.png) no-repeat left center/24px;
+    }
+    .type5{
+        background: url(../../assets/img/icon_call05.png) no-repeat left center/24px;
+    }
+}
+
+/***********    under-box (S)   ***********/
+/* left-box (S) */
+.under_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    /* left-box (S) */
+    .left_box{
+        > ul{
+            display: flex;
+
+            li{
+                border-left: 1px solid #e6e6e6;
+
+                a{
+                    margin: 0 20px;
+                    font-size: 1.4rem;
+                    color:#707070;
+                }
+            }
+
+            .none{
+                border: none;
+
+                a{
+                    margin: 0 20px 0 0;
+                }
+            }
+
+            .color_black{
+                color:#303030;
+            }
+        }
+
+        address{
+            margin-top: 20px;
+            
+            .bottom{
+                display: flex;
+                position: relative;
+                li{
+                    padding: 0 8px;
+                    font-size:1.3rem;
+                    color: #707070;
+                }
+                li::before{
+                    content: "";
+                    position:absolute;
+                    top:3px;
+                    left:265px;
+                    width: 1px;
+                    height: 9px;
+                    background-color: #a0a0a0;
+                }
+                li::after{
+                    content: "";
+                    position:absolute;
+                    top:3px;
+                    left: 367px;
+                    width: 1px;
+                    height: 9px;
+                    background-color: #a0a0a0;
+                }
+                .none{
+                    padding: 0 8px 0 0;
+                }
+            }
+
+            p{
+                font-size: 1.1rem;
+                color: #707070;
+            }
+        }
+    }
+
+/* right-box (S) */
+    .right_box{
+        button{
+            width: 200px;
+            padding: 12px 20px;
+            text-align: left;
+            font-size: 1.4rem;
+            color: #707070;
+            background: #fff url(../../assets/img/icon_familysite_close.png) no-repeat right 20px center/10px;
+            border:1px solid #e6e6e6;
+            border-radius: 10px;
+        }
+
+        ul{
+            display: flex;
+            margin-top: 10px;
+        }
+    }
+}
 
