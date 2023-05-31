@@ -5,10 +5,12 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  color: #303030;
 }
 
 html, body {
   font-size: 62.5%;
+  font-family: "SpoqaHanSansNeo", "sans-serif";
 }
 
 @font-face {
@@ -41,13 +43,247 @@ html, body {
   src: url(../../assets/fonts/SpoqaHanSansNeo-Bold.woff) format("woff");
   font-weight: 700;
 }
+#wrap {
+  background-color: #f9f9f9;
+}
+
 /*inner*/
 .inner {
   margin: auto;
   width: 1480px;
 }
 
+h2,
+h3 {
+  font-family: "KBFGDisplay";
+}
+
 /*header*/
 header {
   height: 70px;
+}
+header .inner {
+  display: flex;
+  align-items: center;
+}
+header .inner h1 {
+  margin-right: 20px;
+}
+header .inner h1 img {
+  width: 130px;
+}
+header .inner nav ul {
+  display: flex;
+}
+header .inner nav ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  height: 70px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #707070;
+}
+header .inner > div {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+header .inner > div ul {
+  display: flex;
+}
+header .inner > div ul li a {
+  padding: 10px;
+  letter-spacing: -0.5px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #707070;
+}
+header .inner > div div {
+  display: flex;
+  align-items: center;
+  margin-left: 22px;
+}
+header .inner > div div .btn_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 64px;
+  height: 28px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #707070;
+  border-radius: 50px;
+  border: 1px solid #c8c8c8;
+}
+header .inner > div div button {
+  width: 40px;
+  height: 50px;
+  border: none;
+  background: none;
+}
+header .inner > div div button img {
+  width: 32px;
+}
+
+/*main S*/
+main {
+  /*section s*/
+}
+main .inner {
+  padding: 40px 0 50px;
+}
+main h2 {
+  margin-bottom: 30px;
+  line-height: 130%;
+  letter-spacing: -1px;
+  font-size: 2.8rem;
+}
+main h2 span {
+  font-size: 1.8rem;
+  font-family: "KBFGDisplay";
+  font-weight: 300;
+}
+main section {
+  display: flex;
+  justify-content: space-between;
+  /*left-box*/
+  /*right-box*/
+}
+main section .left_box ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 540px;
+  height: 500px;
+}
+main section .left_box ul li {
+  width: calc(50% - 10px);
+  height: calc(50% - 10px);
+}
+main section .left_box ul li a {
+  display: block;
+  position: relative;
+  padding: 40px;
+  height: 100%;
+  background: #fff no-repeat right 40px bottom 40px/48px;
+  letter-spacing: -1px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+main section .left_box ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  right: -20px;
+  width: 180px;
+  height: 160px;
+  background-size: cover;
+  transform: scale(4);
+  transition: all ease 0s;
+  opacity: 0;
+}
+main section .left_box ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  right: -20px;
+  width: 180px;
+  height: 160px;
+  background-size: cover;
+  transition: all ease 0.4s;
+  opacity: 0;
+  z-index: 1;
+}
+main section .left_box ul li a strong {
+  display: block;
+  margin-bottom: 20px;
+  font-family: "KBFGDisplay";
+  font-size: 2rem;
+  font-weight: 700;
+}
+main section .left_box ul li a strong::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+}
+main section .left_box ul li a p {
+  font-size: 1.5rem;
+  color: #707070;
+  font-weight: 300;
+}
+main section .left_box ul li a.item1 {
+  background-image: url(../../assets/img/icon_car.png);
+}
+main section .left_box ul li a.item1::after {
+  background-image: url(../../assets/img/bg_card01.png);
+}
+main section .left_box ul li a.item1::before {
+  background-image: url(../../assets/img/img_card01.png);
+}
+main section .left_box ul li a.item2 {
+  background-image: url(../../assets/img/icon_coin.png);
+}
+main section .left_box ul li a.item2::after {
+  background-image: url(../../assets/img/bg_card02.png);
+}
+main section .left_box ul li a.item2::before {
+  background-image: url(../../assets/img/img_card02.png);
+}
+main section .left_box ul li a.item3 {
+  background-image: url(../../assets/img/icon_corp.png);
+}
+main section .left_box ul li a.item3::after {
+  background-image: url(../../assets/img/bg_card03.png);
+}
+main section .left_box ul li a.item3::before {
+  background-image: url(../../assets/img/img_card03.png);
+}
+main section .left_box ul li a.item4 {
+  background-image: url(../../assets/img/icon_person.png);
+}
+main section .left_box ul li a.item4::after {
+  background-image: url(../../assets/img/bg_card04.png);
+}
+main section .left_box ul li a.item4::before {
+  background-image: url(../../assets/img/img_card04.png);
+}
+main section .left_box ul li a:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+main section .left_box ul li a:hover.item1 {
+  background: linear-gradient(to bottom right, #ffeca8, #ffd131);
+}
+main section .left_box ul li a:hover.item2 {
+  background: linear-gradient(to bottom right, #dff0a9, #c9dd8c);
+}
+main section .left_box ul li a:hover.item3 {
+  background: linear-gradient(to bottom right, #e2d9f4, #c7d0f7);
+}
+main section .left_box ul li a:hover.item4 {
+  background: linear-gradient(to bottom right, #ffe0c6, #f7b983);
+}
+main section .left_box ul li a:hover::after {
+  transform: scale(1);
+  transition: all ease 0.4s;
+  opacity: 1;
+}
+main section .left_box ul li a:hover::before {
+  bottom: -40px;
+  transition: all ease 0.4s;
+  opacity: 1;
+}
+main section .left_box ul li a:hover strong::after {
+  border: none;
+}
+main section .right_box {
+  width: 860px;
 }
